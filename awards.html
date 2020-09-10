@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhas | Awards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/profile.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/98a5377f28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closemenu()"></i>
+                <ul>
+                    <a class="nav-icon" href="index.html"><li>HOME</li></a>
+                    <a class="nav-icon" href="about.html"><li>ABOUT</li></a>
+                    <a class="nav-icon" href="movies.html"><li>MOVIES</li></a>
+                    <a class="nav-icon" href="#"><li>AWARDS</li></a>
+                    <a class="nav-icon" href="contact.html"><li>CONTACT</li></a>
+                </ul>
+                <button type="button" class="btn">RESUME</button>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+        
+        <section id="awards">
+            <h1>Awards Won</h1>
+            <div class="border"></div>
+        <div class="award containers">
+        <div class="award-bottom">
+            <div class="award-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+            <h2>Santosham Film Award for Best Young Performer</h2>
+            <p>Awarded with Santosham Film Award for Best Young Performer in 2004 for Varsham Movie</p>
+            </div>
+            <div class="award-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+            <h2>CineMaa award for Critic's Choice Actor</h2>
+            <p>Awarded with CineMaa award for Critic's Choice Actor in 2010 for Ek Niranjan Movie</p>
+            </div>
+            <div class="award-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+            <h2>Nandi Award for Best Actor</h2>
+            <p>Awarded with Nandi Award for Best Actor in 2013 for Mirchi Movie</p>
+            </div>
+            <div class="award-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+            <h2>Santosham Best Actor Award</h2>
+            <p>Awarded with Santosham Best Actor Award in 2015 for 	Baahubali: The Beginning Movie</p>
+            </div>
+            <div class="award-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+            <h2>SIIMA Award for Best Actor – Telugu</h2>
+            <p>Awarded with SIIMA Award for Best Actor – Telugu in 2017 for Baahubali 2: The Conclusion Movie</p>
+            </div>
+            <div class="award-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+            <h2>ETC Bollywood Business Awards – Highest Grossing Debut Actor</h2>
+            <p>Awarded with ETC Bollywood Business Awards – Highest Grossing Debut Actor for the film Saahoo in 2019</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    </div>
+    <script>
+        var show = document.getElementById("nav-links");
+        function showmenu(){
+            show.style.right="0"
+        }
+        function closemenu(){
+            show.style.right="-200px"
+        }
+    </script>
+</body>
+</html>

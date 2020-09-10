@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhas | ABOUT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/profile.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/98a5377f28.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closemenu()"></i>
+                <ul>
+                    <a class="nav-icon" href="#">
+                        <li>HOME</li>
+                    </a>
+                    <a class="nav-icon" href="about.html">
+                        <li>ABOUT</li>
+                    </a>
+                    <a class="nav-icon" href="movies.html">
+                        <li>MOVIES</li>
+                    </a>
+                    <a class="nav-icon" href="awards.html">
+                        <li>AWARDS</li>
+                    </a>
+                    <a class="nav-icon" href="contact.html">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+                <button type="button" class="btn">RESUME</button>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+        <section id="about">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <h2>Film Actor</h2>
+                <p>I Uppalapati Venkata Suryanarayana Prabhas Raju known mononymously as <span>Prabhas</span>. I am an Indian Film Actor predominantly in Telugu Films.I am into films in 2002 and the first film is <b>Eeshwar</b> a telugu action drama film.  </p>
+                <button>View More Details</button>
+            </div>
+            <div class="about-model">
+                <img src="images/hero.png" alt="model" />
+            </div>
+        </section>
+    </div>
+    <script>
+        var show = document.getElementById("nav-links");
+
+        function showmenu() {
+            show.style.right = "0"
+        }
+
+        function closemenu() {
+            show.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

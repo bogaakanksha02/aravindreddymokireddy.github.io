@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhas | Young Rebel Star</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/profile.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/98a5377f28.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closemenu()"></i>
+                <ul>
+                    <a class="nav-icon" href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a class="nav-icon" href="about.html">
+                        <li>ABOUT</li>
+                    </a>
+                    <a class="nav-icon" href="#">
+                        <li>MOVIES</li>
+                    </a>
+                    <a class="nav-icon" href="awards.html">
+                        <li>AWARDS</li>
+                    </a>
+                    <a class="nav-icon" href="contact.html">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+                <button type="button" class="btn">RESUME</button>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+        <div class="movie-section">
+        <div class="inner-width">
+            <h1>My Movies</h1>
+            <div class="borders"></div>
+            <div class="gallery">
+
+            <a href="./images/movies/1.jpg" class="image">
+                <img src="./images/movies/1.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/2.jpg" class="image">
+                <img src="./images/movies/2.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/3.jpg" class="image">
+                <img src="./images/movies/3.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/4.jpg" class="image">
+                <img src="./images/movies/4.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/5.jpg" class="image">
+                <img src="./images/movies/5.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/6.jpg" class="image">
+                <img src="./images/movies/6.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/7.jpg" class="image">
+                <img src="./images/movies/7.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/8.jpg" class="image">
+                <img src="./images/movies/8.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/9.jpg" class="image">
+                <img src="./images/movies/9.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/10.jpg" class="image">
+                <img src="./images/movies/10.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/11.jpg" class="image">
+                <img src="./images/movies/11.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/12.jpg" class="image">
+                <img src="./images/movies/12.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/13.jpg" class="image">
+                <img src="./images/movies/13.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/14.jpg" class="image">
+                <img src="./images/movies/14.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/15.jpg" class="image">
+                <img src="./images/movies/15.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/16.jpg" class="image">
+                <img src="./images/movies/16.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/17.jpg" class="image">
+                <img src="./images/movies/17.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/18.jpg" class="image">
+                <img src="./images/movies/18.jpg" alt="">
+            </a>
+
+            <a href="./images/movies/19.jpg" class="image">
+                <img src="./images/movies/19.jpg" alt="">
+            </a>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        var show = document.getElementById("nav-links");
+
+        function showmenu() {
+            show.style.right = "0"
+        }
+
+        function closemenu() {
+            show.style.right = "-200px"
+        }
+
+        $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+            enabled: true
+        }
+        });
+    </script>
+</body>
+
+</html>
