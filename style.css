@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -74,7 +74,7 @@ html{
     font-size: 20px;
 }
 
-#btn{
+#btn {
     margin-left: 30%;
     width: auto;
     font-weight: bold;
@@ -96,7 +96,7 @@ html{
     border: 0;
 }
 
-#btn:hover , #btn1:hover{
+#btn:hover, #btn1:hover {
     background: #00000000;
     border: 1px solid #fff;
     color: greenyellow;
@@ -124,7 +124,7 @@ html{
     margin-bottom: 30px;
 }
 
-.hero-title h1 span, .hero-title h2 span,span {
+.hero-title h1 span, .hero-title h2 span, span {
     color: greenyellow;
 }
 
@@ -135,16 +135,15 @@ html{
 /* responsive nature */
 
 @media(max-width: 1160px) {
-    .nav-logo img{
+    .nav-logo img {
         margin-top: 15px;
     }
     .hero-title {
         margin: 80px 40px;
     }
-    .hero-title{
+    .hero-title {
         height: 80vh;
     }
-    
     .hero-title h1 {
         font-size: 50px;
     }
@@ -185,69 +184,56 @@ html{
         margin-left: 25px;
         margin-top: 10px;
     }
-
-    .social{
+    .social {
         display: none;
     }
-    #btn,#btn1{
+    #btn, #btn1 {
         font-size: 10px;
         width: auto;
         background: orange;
         color: #fff;
     }
-
-    #about{
+    #about {
         margin-top: 50px;
     }
-
     #about .about-model img {
         display: none;
     }
-
     #about .about-text h1 {
         font-size: 3rem;
         color: greenyellow;
         margin-top: 50px;
     }
-
     #about .about-text h2 {
         font-size: 2rem;
         color: #fff;
         padding-top: 15px;
     }
-
-    #about .about-text p{
+    #about .about-text p {
         width: 80%;
         margin-left: 10px;
     }
-
     #services {
         height: auto;
     }
-
     .b-container {
         flex-wrap: wrap;
     }
-
     .s-box {
         flex-grow: 1;
         width: 100%;
-        height:400px;
+        height: 400px;
     }
-
     .s-b-img img {
         object-fit: cover;
     }
-
     .p-box {
         height: 200px;
         width: 100px;
     }
-
-    .p-container{
+    .p-container {
         width: 100%;
     }
-
     .p-box img {
         width: 100%;
         height: 100%;
@@ -255,7 +241,7 @@ html{
     }
 }
 
-@media(max-width: 1300px){
+@media(max-width: 1300px) {
     #services {
         height: auto;
         margin-top: 150px;
@@ -272,12 +258,12 @@ html{
 .social {
     position: fixed;
     top: 50vh;
-    }
+}
 
 .social ul {
     padding: 0px;
     transform: translate(-270px, 0);
-    }
+}
 
 .social ul li {
     display: block;
@@ -288,23 +274,23 @@ html{
     padding: 10px;
     border-radius: 0 30px 30px 0;
     transition: all 1s;
-    }
+}
 
 .social ul li:hover {
     transform: translate(85px, 0);
     background: #f4096c;
-    }
+}
 
 .social ul li:hover a {
     color: #fff;
-    }
+}
 
 .social ul li:hover i {
     color: #f4096c;
     background: #fff;
     transform: rotate(360deg);
     transition: all 1s;
-    }
+}
 
 .social ul li i {
     margin-left: 10px;
@@ -317,8 +303,7 @@ html{
     font-size: 20px;
     background: #ffffff;
     transform: rotate(0deg);
-    }
-
+}
 
 /* ABOUT PAGE */
 
@@ -351,8 +336,7 @@ html{
     font-weight: 400;
 }
 
-.about-text h1,
-h2 {
+.about-text h1, h2 {
     padding: 0px;
 }
 
@@ -391,73 +375,32 @@ h2 {
 
 /*Movies Section*/
 
-.movie-section {
-    width: 100%;
-    padding: 20px 0;
-    background: #00000000;
+.movies-section {
+    font-family: sans-serif;
+    margin: 0 40px;
 }
 
-.inner-width {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-.movie-section h1 {
+.movies-section h1 {
     text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-}
-.movie-section a img {
-    padding: 2px;
+    color: white;
+    margin: 30px 0 50px;
 }
 
-.borders {
-    width: 180px;
-    height: 4px;
-    background: greenyellow;
-    margin: 20px auto;
+.movies {
+    margin: 10px 50px;
 }
 
-.movie-section .gallery {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+.movies img {
+    width: 230px;
+    height: 300px;
+    padding: 8px;
+    filter: grayscale(100%);
+    transition: 1s;
 }
 
-.movie-section .image {
-    flex: 25%;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.movie-section .image img {
-    width: 100%;
-    height: 100%;
-    transition: 0.4s;
-}
-
-.movie-section .image:hover img {
-    transform: scale(1.4) rotate(15deg);
-}
-
-@media screen and (max-width:960px) {
-    .movie-section .image {
-        flex: 33.33%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .movie-section .image {
-        flex: 50%;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .movie-section .image {
-        flex: 100%;
-    }
+.movies img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
 
 /* Contact Section */
@@ -482,7 +425,6 @@ h2 {
     padding: 5px;
     letter-spacing: 4px;
     border-bottom: 2px solid #1E1E1E;
-
 }
 
 #contact-btn button {
@@ -511,7 +453,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #contact-form form {
@@ -553,7 +494,6 @@ h2 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
-
 }
 
 .c-l-heading {
@@ -562,25 +502,20 @@ h2 {
     font-size: 3rem;
     letter-spacing: 2px;
     font-weight: 400;
-
 }
 
-.f-name,
-.f-email {
+.f-name, .f-email {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto';
-
 }
 
-.f-name font,
-.f-email font {
+.f-name font, .f-email font {
     color: #000;
     font-size: 22px;
 }
 
-.f-name input,
-.f-email input {
+.f-name input, .f-email input {
     height: 30px;
     width: 250px;
     border: none;
@@ -591,14 +526,12 @@ h2 {
     margin: 10px 0px;
 }
 
-.f-email input::placeholder,
-.f-name input::placeholder {
+.f-email input::placeholder, .f-name input::placeholder {
     opacity: 0.5;
     letter-spacing: 1px;
 }
 
-.f-email input:focus,
-.f-name input:focus {
+.f-email input:focus, .f-name input:focus {
     border-bottom: 1px solid #17d1ac;
     transition: all ease 0.5s;
 }
@@ -607,7 +540,6 @@ h2 {
     font-size: 18px;
     color: #000;
     font-family: 'Roboto';
-
 }
 
 .message {
@@ -647,7 +579,7 @@ h2 {
     padding: 20px 0;
 }
 
-#awards h1{
+#awards h1 {
     text-align: center;
     font-family: 'Roboto';
     font-size: 40px;
@@ -724,7 +656,6 @@ h2 {
 
 /*  */
 
-
 /* Contact Me */
 
 .contact-section {
@@ -739,8 +670,8 @@ h2 {
 }
 
 .border {
-    width: 100px;
-    height: 10px;
+    width: 150px;
+    height: 5px;
     background: greenyellow;
     margin: 10px auto;
 }
